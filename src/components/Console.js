@@ -47,6 +47,10 @@ class Console extends React.Component {
                     consoleOutput: [],
                     consoleInputVal: ''
                 });
+            } else if (cmd.includes("su")) {
+                messages = [
+                    {label: 'This incident has been reported. Nice try :)'}
+                ];
             } else {
                 messages = [{label: 'Invalid command'}];
             }
