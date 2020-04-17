@@ -22,7 +22,7 @@ class SocialIcons extends React.Component {
                     </a>
                 </div>
                 <div className="col">
-                    <a href="mailto:contact@ctanner.dev?subject=Career Opportunity">
+                    <a href="mailto:hire@ctanner.dev?subject=Career Opportunity">
                         <FontAwesomeIcon icon={['fal', 'paper-plane']} />
                     </a>
                 </div>

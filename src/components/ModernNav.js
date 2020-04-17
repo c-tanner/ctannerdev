@@ -115,7 +115,7 @@ class ModernNav extends React.Component {
                                 <li className="nav-item">
                                     <a 
                                         className="nav-link" 
-                                        href="mailto:contact@ctanner.dev?subject=Career Opportunity">
+                                        href="mailto:hire@ctanner.dev?subject=Career Opportunity">
                                         <FontAwesomeIcon icon={['fal', 'paper-plane']} />
                                     </a>
                                 </li>

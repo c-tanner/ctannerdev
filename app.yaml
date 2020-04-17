@@ -1,5 +1,4 @@
 # [START runtime]
-service: "ctannerdev"
 runtime: nodejs
 env: flex
 # [END runtime]

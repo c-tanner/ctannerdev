@@ -46,7 +46,7 @@ class App extends React.Component {
         console.log("=======================================\n");
         console.log("Looking for a senior software engineer with leadership experience?\n");
         console.log("====================\n");
-        console.log("contact@ctanner.dev\n");
+        console.log("hire@ctanner.dev\n");
         console.log("====================\n");
     }
     render() {
