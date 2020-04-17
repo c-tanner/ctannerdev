@@ -24,13 +24,13 @@ class FolioBlock extends React.Component {
                     </div>
                 </div>
                 <div className="row portfolio--row">
-                    <div class="col-lg-6">
+                    <div className="col-lg-6">
                         <img 
                             src={SpektrolMockup} 
                             className="portfolio--mockup" 
                             alt="Spektrol Mockup" />
                     </div>
-                    <div class="col-lg-6 portfolio--info portfolio--pl">
+                    <div className="col-lg-6 portfolio--info portfolio--pl">
                         <img 
                             src={SpektrolLogo} 
                             className="portfolio--logo"
@@ -77,13 +77,13 @@ class FolioBlock extends React.Component {
                     </div>
                 </div>
                 <div className="row portfolio--row">
-                <div class="col-lg-6 mob">
+                <div className="col-lg-6 mob">
                         <img 
                             src={ArtisthuntMockup} 
                             className="portfolio--mockup" 
                             alt="Artist Hunt Mockup" />
                     </div>
-                    <div class="col-lg-6 portfolio--info portfolio--pr">
+                    <div className="col-lg-6 portfolio--info portfolio--pr">
                         <img 
                             src={ArtisthuntLogo} 
                             className="portfolio--logo" 
@@ -132,7 +132,7 @@ class FolioBlock extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 full">
+                    <div className="col-lg-6 full">
                         <img 
                             src={ArtisthuntMockup} 
                             className="portfolio--mockup" 
@@ -140,13 +140,13 @@ class FolioBlock extends React.Component {
                     </div>
                 </div>
                 <div className="row portfolio--row">
-                    <div class="col-lg-6">
+                    <div className="col-lg-6">
                         <img 
                             src={AudiointelMockup} 
                             className="portfolio--mockup" 
                             alt="Audio Intelligence Mockup" />
                     </div>
-                    <div class="col-lg-6 portfolio--info portfolio--pl">
+                    <div className="col-lg-6 portfolio--info portfolio--pl">
                         <img 
                             src={AudiointelLogo} 
                             className="portfolio--logo" 

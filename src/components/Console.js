@@ -8,7 +8,8 @@ class Console extends React.Component {
             keyName: null,
             cmd: null,
             consoleOutput: [],
-            consoleInputVal: ''
+            consoleInputVal: '',
+            messagesEnd: null
         };
     }
     changeView() {
@@ -65,6 +66,12 @@ class Console extends React.Component {
             });
         }
     }
+    scrollToBottom = () => {
+        this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+    }
+    componentDidUpdate() {
+        this.scrollToBottom();
+    }
     render() {
         return(
             <div id="console-container">
@@ -98,6 +105,9 @@ class Console extends React.Component {
                 })}
                 <div>
                     $ <ConsoleInput onChange={this.onChange.bind(this)} inputVal={this.state.consoleInputVal} />
+                </div>
+                <div style={{ float:"left", clear: "both" }}
+                    ref={(el) => { this.messagesEnd = el; }}>
                 </div>
             </div>
         )
