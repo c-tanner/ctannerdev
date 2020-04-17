@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap');
+
+$bgColor: #000;
+$textColor: #33FF00;
+$glow: 0px 0px 8px rgba(51, 255, 0, 0.3);
+
+#terminal-container a, 
+#terminal-container a:focus, 
+#terminal-container a:visited, 
+#terminal-container a:hover {
+    color: $textColor;
+    text-decoration: underline;
+}
+#terminal-container svg {
+    filter: drop-shadow($glow);
+    animation-duration: 0.01s;
+    animation-name: textflickerSVG;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+#terminal-container, input {
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#terminal-container.heavyflicker {
+    animation-duration: 1s;
+    animation-name: textflicker-heavy;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(3px);
+}
+#terminal-bg {
+    background-color: $bgColor;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+}
+#terminal-overlay {
+    background-image: url('../img/scan2.png');
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.4;
+    filter: blur(2px);
+    transition: opacity 3s;
+}
+#terminal-container {
+    background-color: transparent;
+    color: $textColor;
+    font-family: "Source Code Pro", Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-weight: 400;
+    text-shadow: $glow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 10px;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 2s;
+    overflow: scroll;
+    height: 100%;
+}
+#terminal-header {
+    align-items: center;
+}
+#terminal-header h1 {
+    font-size: 1em;
+}
+#terminal-header .col-md-10 {
+    text-align: center;
+    padding: 20px;
+}
+#terminal-header .col-md-2 {
+    text-align: center;
+}
+#console-container {
+    padding-top: 20px;
+    opacity: 1;
+    transition: opacity 2s;
+}
+.iconRow {
+    font-size: 1.5rem;
+}
+.Typist .Cursor--blinking {
+    opacity: 0;
+    animation: blink 0.5s normal infinite; 
+}
+.consoleInput {
+    position: relative;
+    display: inline;
+}
+.consoleInput i {
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	background-color: $textColor;
+	left: 5px;
+	top: 10%;
+	animation-name: cursorBlink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+.consoleInput input:focus + i {
+	display: none;
+}
+.consoleInput--input {
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    color: $textColor;
+}
+.consoleMessage {
+    padding-left: 20px;
+}
+
+@keyframes cursorBlink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 rgba(234, 54, 175, 0.5), -2px 0 0 rgba(117, 250, 105, 0.5);
+    }
+    to {
+      text-shadow: 2px 0.5px 2px rgba(234, 54, 175, 0.5), -1px -0.5px 2px rgba(117, 250, 105, 0.5);
+    }
+}
+@keyframes textflicker-heavy {
+    from {
+      text-shadow: 10px 0 0 rgba(234, 54, 175, 1), -12px 0 0 rgba(117, 250, 105, 1);
+    }
+    to {
+      text-shadow: 20px 5px 20px rgba(234, 54, 175, 1), -10px -5px 20px rgba(117, 250, 105, 1);
+    }
+}
+@keyframes textflickerSVG {
+    from {
+      filter: drop-shadow(1px 0 0 rgba(234, 54, 175, 0.5));
+    }
+    to {
+        filter: drop-shadow(-1px -0.5px 2px rgba(117, 250, 105, 0.5));
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #terminal-container {
+        padding: 30px 100px;
+    }
+    #terminal-header h1 {
+        font-size: 2.5rem;
+    }
+    #terminal-header .col-md-10 {
+        text-align: left;
+        padding: 15px;
+    }
+    #terminal-header .col-md-2 {
+        text-align: left;
+    }
+}
