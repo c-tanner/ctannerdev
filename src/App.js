@@ -39,6 +39,16 @@ class App extends React.Component {
             modernContainerHeight: '100%'
         });
     }
+    componentDidMount() {
+        console.log("\nHey there!\nFeel free to look around, but if you want to a look at the source code, head over to:\n");
+        console.log("=======================================\n");
+        console.log("https://github.com/c-tanner/ctannerdev\n");
+        console.log("=======================================\n");
+        console.log("Looking for a senior software engineer with leadership experience?\n");
+        console.log("====================\n");
+        console.log("contact@ctanner.dev\n");
+        console.log("====================\n");
+    }
     render() {
         return (
             <div>
