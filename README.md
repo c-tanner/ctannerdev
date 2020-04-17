@@ -19,4 +19,5 @@ This project was created using React and SCSS, but I'm also well versed in other
 If you would like to contact me about a career opportunity:
 
 [Email](mailto:contact@ctanner.dev)
+
 [LinkedIn](https://www.linkedin.com/in/ctannerdev)
