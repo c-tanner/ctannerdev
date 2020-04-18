@@ -17,7 +17,7 @@ import linux from '../img/linux.png';
 class FolioBlock extends React.Component {
     render() {
         return(
-            <div className="container">
+            <div className="container" style={{paddingBottom: "100px"}}>
                 <div className="row my-4">
                     <div className="col my-4 text-center">
                         <h2>Portfolio</h2>

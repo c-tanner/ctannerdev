@@ -38,8 +38,8 @@ $glow: 0px 0px 8px rgba(51, 255, 0, 0.3);
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100%;
-    position: fixed;
+    height: 100vh;
+    position: absolute;
     z-index: 5;
 }
 #terminal-overlay {
@@ -50,7 +50,7 @@ $glow: 0px 0px 8px rgba(51, 255, 0, 0.3);
     left: 0;
     width: 100vw;
     height: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     opacity: 0.4;
     filter: blur(2px);

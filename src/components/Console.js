@@ -67,7 +67,7 @@ class Console extends React.Component {
         }
     }
     scrollToBottom = () => {
-        this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+        this.messagesEnd.scrollIntoView({ behavior: "smooth", block: "center" });
     }
     componentDidUpdate() {
         this.scrollToBottom();
@@ -104,7 +104,9 @@ class Console extends React.Component {
                     )
                 })}
                 <div>
-                    $ <ConsoleInput onChange={this.onChange.bind(this)} inputVal={this.state.consoleInputVal} />
+                    $ <ConsoleInput 
+                        onChange={this.onChange.bind(this)} 
+                        inputVal={this.state.consoleInputVal} />
                 </div>
                 <div style={{ float:"left", clear: "both" }}
                     ref={(el) => { this.messagesEnd = el; }}>

@@ -51,7 +51,7 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div style={{minHeight: '100vh'}}>
                 <Terminal 
                     isHidden={this.state.hideTerminal} 
                     isBlurred={this.state.blurTerminal}
