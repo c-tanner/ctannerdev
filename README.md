@@ -3,8 +3,10 @@
 This project was created using React and SCSS, but I'm also well versed in other technologies:
 
 * PHP
-* Python / Django
-* MySQL / PostgreSQL
+* Python (+ Django, Flask)
+* SQL (MySQL / PostgreSQL)
+* Java
+* Go
 * Google Cloud Platform / AWS
 * Linux (Ubuntu, CentOS)
 * Apache / Nginx
