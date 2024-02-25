@@ -2,24 +2,24 @@
 
 This project was created using React and SCSS, but I'm also well versed in other technologies:
 
-* PHP
-* Python (+ Django, Flask)
+* Python (+ Django, FastAPI)
 * SQL (MySQL / PostgreSQL)
-* Java
-* Go
+* PHP (+ Laravel)
+* CLI tooling (Bash)
 * Google Cloud Platform / AWS
-* Linux (Ubuntu, CentOS)
+* Linux
 * Apache / Nginx
 * Docker
-* Vanilla Javascript (ES6)
-* jQuery
-* CSS3
+* Kubernetes
+* Hardened REST APIs
+* Javascript (React, TypeScript, jQuery)
+* CSS3 (+ SCSS)
 * HTML5
 
 ## Contact
 
 If you would like to contact me about a career opportunity:
 
-[Email](mailto:contact@ctanner.dev)
+[Email](mailto:hire@ctanner.dev)
 
 [LinkedIn](https://www.linkedin.com/in/ctannerdev)
